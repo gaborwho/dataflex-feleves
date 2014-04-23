@@ -2,3 +2,11 @@ Termek (Azonosito {num:6}, Megnevezes, Egysegar)
 Sofor (Azonosito {num:4}, Nev}
 Gepkocsi (Rendszam, Tipus)
 Fuvarlevel (Termek {num:6}, Gepkocsi, Sofor, Datum, Tav, Munkaido, UAMennyiseg, UAEgysegar)
+
+========
+Relációk
+========
+
+                    Fuvarlevel
+                   /     |     \
+              Termek   Sofor   Gepkocsi

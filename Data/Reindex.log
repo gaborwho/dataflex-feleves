@@ -1,0 +1,22 @@
+2014.02.07. 9:41:31,715 - Verifying filelist C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\Filelist.cfg
+2014.02.07. 9:41:31,715 - Opening filelist C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\Filelist.cfg
+2014.02.07. 9:41:31,715 - Start reindexing
+2014.02.07. 9:41:31,715 - No path specified for CodeType
+2014.02.07. 9:41:31,715 - Added path C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\ to original file name
+2014.02.07. 9:41:31,731 - Opening C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\CodeType as 253
+2014.02.07. 9:41:31,731 - Reindexing CodeType
+2014.02.07. 9:41:31,731 - No path specified for CodeMast
+2014.02.07. 9:41:31,731 - Added path C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\ to original file name
+2014.02.07. 9:41:31,731 - Opening C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\CodeMast as 254
+2014.02.07. 9:41:31,731 - Reindexing CodeMast
+2014.04.22. 11:32:14,255 - Verifying filelist C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\Filelist.cfg
+2014.04.22. 11:32:14,256 - Opening filelist C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\Filelist.cfg
+2014.04.22. 11:32:14,258 - Start reindexing
+2014.04.22. 11:32:14,26 - No path specified for CodeType
+2014.04.22. 11:32:14,261 - Added path C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\ to original file name
+2014.04.22. 11:32:14,262 - Opening C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\CodeType as 253
+2014.04.22. 11:32:14,264 - Reindexing CodeType
+2014.04.22. 11:32:14,268 - No path specified for CodeMast
+2014.04.22. 11:32:14,27 - Added path C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\ to original file name
+2014.04.22. 11:32:14,271 - Opening C:\Program Files (x86)\Visual DataFlex 17.1\Usr\New\Data\CodeMast as 254
+2014.04.22. 11:32:14,273 - Reindexing CodeMast

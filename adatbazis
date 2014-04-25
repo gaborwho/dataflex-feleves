@@ -7,9 +7,9 @@ Fuvarlevel (Termek {num:6}, Gepkocsi, Sofor, Datum, Tav, Munkaido, UAMennyiseg, 
 Relációk
 ========
 
-                    Fuvarlevel
-                   /     |     \
               Termek   Sofor   Gepkocsi
+                   \     |     /
+                    Fuvarlevel
 
 Termek
 Azonosito NUM 6,0

@@ -1,0 +1,34 @@
+﻿======
+Táblák
+======
+
+              Termek   Sofor   Gepkocsi
+                   \     |     /
+                    Fuvarlevel
+
+Termek
+-
+Azonosito NUM 6,0 Index1
+Megnevezes ASC 30,0 Index2
+Egysegar NUM 8,0
+
+Sofor
+-
+Azonosito NUM 6,0 Index1
+Nev ASC 60,0 Index2
+
+Gepkocsi
+-
+Rendszam ASC 6,0 Index1
+Tipus ASC 30,0
+
+Fuvarlevel
+-
+Termek NUM 6,0 <- Termek.Azonosito
+Gepkocsi ASC 6,0 <- Gepkocsi.Rendszam
+Sofor NUM 6,0 <- Sofor.Azonosito
+Datum DAT 6,0 // fuvar dátuma
+Tav NUM 4,0 // megtett táv km-ben
+Munkaido NUM 4,0 // munkaidő percben
+UAMennyiseg NUM 4,0 // elhasznált üzemanyag literben
+UAEgysegar NUM 4,0 // üzemanyag egységára

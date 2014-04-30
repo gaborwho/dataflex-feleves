@@ -1,4 +1,4 @@
 #REPLACE FILE2 Sofor
 #REPLACE Sofor.Recnum |FN2,0
-#REPLACE Sofor.Azonosito |FS2,1
+#REPLACE Sofor.Azonosito |FN2,1
 #REPLACE Sofor.Nev |FS2,2

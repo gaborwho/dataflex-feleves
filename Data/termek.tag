@@ -1,0 +1,3 @@
+Azonosito
+Megnevezes
+Egysegar

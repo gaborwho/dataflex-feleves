@@ -1,0 +1,27 @@
+[Workspace]
+CurrentProject=
+Location=C:\Visual DataFlex Projects\Szallitmanyozas\IdeSrc\dataflex_Studio.dsk
+[TabWindows]
+GroupCount=1
+HorizontalGroups=1
+[TabGroup0]
+GroupSize=40
+SelectedTab=1
+[Window0]
+Filename=Fuvarlevel
+ViewType=4
+Top=22
+Left=2
+Bottom=500
+Right=550
+TabIndex=0
+TabGroup=0
+[Window1]
+Filename=Termek
+ViewType=4
+Top=22
+Left=2
+Bottom=500
+Right=550
+TabIndex=1
+TabGroup=0

@@ -1,0 +1,5 @@
+#REPLACE FILE1 Termek
+#REPLACE Termek.Recnum |FN1,0
+#REPLACE Termek.Azonosito |FN1,1
+#REPLACE Termek.Megnevezes |FS1,2
+#REPLACE Termek.Egysegar |FN1,3

@@ -1,0 +1,2 @@
+Rendszam
+Tipus

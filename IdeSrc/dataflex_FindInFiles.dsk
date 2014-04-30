@@ -1,0 +1,13 @@
+[Header]
+Mask=*.src;*.vw;*.sl;*.dg;*.rv;*.bp;*.pkg;*.wo;*.dd;*.inc;*.tpl;*.dfo;*.asp;*.asa;*.htm;*.html;*.css;*.js
+Active=0
+SubDirectories=1
+WholeWordOnly=0
+SearchWhere=0
+Location=C:\Visual DataFlex Projects\Szallitmanyozas\IdeSrc\dataflex_FindInFiles.dsk
+[C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc]
+IsEnabled=1
+[C:\Visual DataFlex Projects\Szallitmanyozas\DdSrc]
+IsEnabled=1
+[C:\Visual DataFlex Projects\Szallitmanyozas\AppHtml]
+IsEnabled=1

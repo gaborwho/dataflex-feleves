@@ -1,0 +1,4 @@
+#REPLACE FILE3 Gepkocsi
+#REPLACE Gepkocsi.Recnum |FN3,0
+#REPLACE Gepkocsi.Rendszam |FS3,1
+#REPLACE Gepkocsi.Tipus |FS3,2

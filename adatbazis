@@ -1,30 +1,29 @@
-Termek (Azonosito {num:6}, Megnevezes, Egysegar {num:7,0})
-Sofor (Azonosito {num:4}, Nev}
-Gepkocsi (Rendszam, Tipus)
-Fuvarlevel (Termek {num:6}, Gepkocsi, Sofor, Datum, Tav, Munkaido, UAMennyiseg, UAEgysegar)
+======
+Táblák
+======
 
-========
-Relációk
-========
-
-                    Fuvarlevel
-                   /     |     \
               Termek   Sofor   Gepkocsi
+                   \     |     /
+                    Fuvarlevel
 
 Termek
+-
 Azonosito NUM 6,0
 Megnevezes ASC 30,0
 Egysegar NUM 8,0
 
 Sofor
+-
 Azonosito NUM 6,0
 Nev ASC 60,0
 
 Gepkocsi
+-
 Rendszam ASC 6,0
 Tipus ASC 30,0
 
 Fuvarlevel
+-
 Termek NUM 6,0 <- Termek.Azonosito
 Gepkocsi ASC 6,0 <- Gepkocsi.Rendszam
 Sofor NUM 6,0 <- Sofor.Azonosito

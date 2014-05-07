@@ -24,6 +24,7 @@ Tipus ASC 30,0
 
 Fuvarlevel
 -
+Fuvarszam NUM 6,0 // Fuvar azonosítója, automatikusan generált, inkrementált
 Termek NUM 6,0 <- Termek.Azonosito
 Gepkocsi ASC 6,0 <- Gepkocsi.Rendszam
 Sofor NUM 6,0 <- Sofor.Azonosito

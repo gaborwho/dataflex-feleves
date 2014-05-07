@@ -1,5 +1,5 @@
 [Workspace]
-CurrentProject=
+CurrentProject=Fuvarlevelek.src
 Location=C:\Visual DataFlex Projects\Szallitmanyozas\IdeSrc\dataflex_Studio.dsk
 [TabWindows]
 GroupCount=1
@@ -8,20 +8,20 @@ HorizontalGroups=1
 GroupSize=40
 SelectedTab=1
 [Window0]
-Filename=Fuvarlevel
-ViewType=4
+Filename=C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc\SoforEntry.vw
+ViewType=2
 Top=22
 Left=2
-Bottom=758
-Right=1375
+Bottom=508
+Right=559
 TabIndex=0
 TabGroup=0
 [Window1]
-Filename=Termek
-ViewType=4
+Filename=C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc\FuvarlevelView.vw
+ViewType=2
 Top=22
 Left=2
-Bottom=758
-Right=1375
+Bottom=508
+Right=559
 TabIndex=1
 TabGroup=0

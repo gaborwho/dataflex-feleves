@@ -2,6 +2,7 @@ Use DataDict.pkg
 
 Open Termek
 Open Fuvarlevel
+Open system
 
 Class cTermekDataDictionary is a DataDictionary
     
@@ -9,12 +10,24 @@ Class cTermekDataDictionary is a DataDictionary
         Forward Send Construct_Object
         Set Main_File to Termek.File_Number
 
+        Set Add_System_File to system.File_Number DD_Lock_On_All
+
         Set Add_Client_File to Fuvarlevel.File_Number
 
         Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
+
+        Set Field_Auto_Increment Field Termek.Azonosito to File_Field system.Last_Termek
+        Set Field_Label_Long Field Termek.Azonosito to "Term‚k azonos¡t¢ja"
+        Set Field_Label_Short Field Termek.Azonosito to "Azonos¡t¢"
+
+        Set Field_Label_Long Field Termek.Megnevezes to "Term‚k megnevez‚se"
+        Set Field_Label_Short Field Termek.Megnevezes to "Megnevez‚s"
+
+        Set Field_Label_Long Field Termek.Egysegar to "Term‚k egys‚g ra"
+        Set Field_Label_Short Field Termek.Egysegar to "Egys‚g r"
 
     End_Procedure
 

@@ -4,12 +4,15 @@ Open Fuvarlevel
 Open Gepkocsi
 Open Sofor
 Open Termek
+Open system
 
 Class cFuvarlevelDataDictionary is a DataDictionary
     
     Procedure Construct_Object
         Forward Send Construct_Object
         Set Main_File to Fuvarlevel.File_Number
+
+        Set Add_System_File to system.File_Number DD_Lock_On_All
         Set Add_Server_File to Sofor.File_Number
         Set Add_Server_File to Termek.File_Number
         Set Add_Server_File to Gepkocsi.File_Number
@@ -21,7 +24,7 @@ Class cFuvarlevelDataDictionary is a DataDictionary
 
         Set Field_Label_Long Field Fuvarlevel.Fuvarszam to "Fuvarlev‚l sz ma"
         Set Field_Label_Short Field Fuvarlevel.Fuvarszam to "Fuvarsz m"
-        Set Field_Value_Range Field Fuvarlevel.Fuvarszam to 01/01/2013 12/31/2014
+        Set Field_Auto_Increment Field Fuvarlevel.Fuvarszam to File_Field system.Last_Fuvarszam
 
         Set Field_Label_Long Field Fuvarlevel.Termek to "Term‚k megnevez‚se"
         Set Field_Label_Short Field Fuvarlevel.Termek to "Term‚k"
@@ -34,6 +37,7 @@ Class cFuvarlevelDataDictionary is a DataDictionary
 
         Set Field_Label_Long Field Fuvarlevel.Datum to "Fuvar d tuma"
         Set Field_Label_Short Field Fuvarlevel.Datum to "D tum"
+        Set Field_Value_Range Field Fuvarlevel.Datum to /2/13/01/0 /2/14/12/3
 
         Set Field_Label_Long Field Fuvarlevel.Tav to "Fuvar sor n megtett t vols g"
         Set Field_Label_Short Field Fuvarlevel.Tav to "T v"

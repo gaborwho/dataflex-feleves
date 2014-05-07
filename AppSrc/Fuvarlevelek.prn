@@ -1,5 +1,5 @@
 Compiling Program: C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc\Fuvarlevelek.src
-Memory Available: 2147483647
+Memory Available: 73211904
 1>Use DFAllEnt.pkg
 Using pre-compiled package DFALLENT.PKG
 Including file: dfallent.pkd    (C:\Program Files (x86)\Visual DataFlex 17.1\Pkg\dfallent.pkd)
@@ -3017,7 +3017,7 @@ Including file: FuvarGridEntry.vw    (C:\Visual DataFlex Projects\Szallitmanyoza
 75389>Start_UI
 75390>
 Summary
-Memory Available: 2147483647
+Memory Available: 59215872
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 43002

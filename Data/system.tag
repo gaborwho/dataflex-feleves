@@ -1,1 +1,3 @@
 Last_Fuvarszam
+Last_Sofor
+Last_Termek

@@ -6,6 +6,10 @@ Open Sofor
 Open Termek
 Open system
 
+Register_Object Sofor_sl
+Register_Object Termek_sl
+Register_Object Gepkocsi_sl
+
 Class cFuvarlevelDataDictionary is a DataDictionary
     
     Procedure Construct_Object
@@ -25,32 +29,52 @@ Class cFuvarlevelDataDictionary is a DataDictionary
         Set Field_Label_Long Field Fuvarlevel.Fuvarszam to "FuvarlevÇl sz†ma"
         Set Field_Label_Short Field Fuvarlevel.Fuvarszam to "Fuvarsz†m"
         Set Field_Auto_Increment Field Fuvarlevel.Fuvarszam to File_Field system.Last_Fuvarszam
+        Set Field_Option Field Fuvarlevel.Fuvarszam DD_NOENTER to True
 
-        Set Field_Label_Long Field Fuvarlevel.Termek to "TermÇk megnevezÇse"
+        Set Field_Label_Long Field Fuvarlevel.Termek to "TermÇk azonos°t¢ja"
         Set Field_Label_Short Field Fuvarlevel.Termek to "TermÇk"
+        Set Field_Prompt_Object Field Fuvarlevel.Termek to Termek_sl
+        Set Field_Option Field Fuvarlevel.Termek DD_FORCEPUT to True
 
         Set Field_Label_Long Field Fuvarlevel.Gepkocsi to "GÇpkocsi rendsz†ma"
         Set Field_Label_Short Field Fuvarlevel.Gepkocsi to "Rendsz†m"
+        Set Field_Prompt_Object Field Fuvarlevel.Gepkocsi to Gepkocsi_sl
+        Set Field_Option Field Fuvarlevel.Gepkocsi DD_FORCEPUT to True
 
         Set Field_Label_Long Field Fuvarlevel.Sofor to "Sofor azonos°t¢ja"
         Set Field_Label_Short Field Fuvarlevel.Sofor to "Sofor"
+        Set Field_Prompt_Object Field Fuvarlevel.Sofor to Sofor_sl
+        Set Field_Option Field Fuvarlevel.Sofor DD_FORCEPUT to True
 
         Set Field_Label_Long Field Fuvarlevel.Datum to "Fuvar d†tuma"
         Set Field_Label_Short Field Fuvarlevel.Datum to "D†tum"
-        Set Field_Value_Range Field Fuvarlevel.Datum to /2/13/01/0 /2/14/12/3
+        Set Field_Value_Range Field Fuvarlevel.Datum to 01/01/2013 12/31/2014
+        Set Field_Mask_Type Field Fuvarlevel.Datum to Mask_Date_Window
 
         Set Field_Label_Long Field Fuvarlevel.Tav to "Fuvar sor†n megtett t†vols†g"
         Set Field_Label_Short Field Fuvarlevel.Tav to "T†v"
+        Set Field_Option Field Fuvarlevel.Tav DD_REQUIRED to True
 
         Set Field_Label_Long Field Fuvarlevel.Munkaido to "Fuvarral eltîltîtt ido"
         Set Field_Label_Short Field Fuvarlevel.Munkaido to "Munkaido"
+        Set Field_Option Field Fuvarlevel.Munkaido DD_REQUIRED to True
 
         Set Field_Label_Long Field Fuvarlevel.UAMennyiseg to "Fuvar sor†n elfogyasztott uzemanyagmennyiseg"
         Set Field_Label_Short Field Fuvarlevel.UAMennyiseg to "özemanyagmennyisÇg"
+        Set Field_Option Field Fuvarlevel.UAMennyiseg DD_REQUIRED to True
 
         Set Field_Label_Long Field Fuvarlevel.UAEgysegar to "Fuvar sor†n elhaszn†lt Åzemanyag aktu†lis †ra"
         Set Field_Label_Short Field Fuvarlevel.UAEgysegar to "özemanyag†r"
+        Set Field_Option Field Fuvarlevel.UAEgysegar DD_REQUIRED to True
 
     End_Procedure
 
 End_Class
+
+#IFDEF Is$WebApp
+#ELSE
+Use Gepkocsi.sl
+Use Termek.sl
+Use Sofor.sl
+
+#ENDIF

@@ -4,6 +4,8 @@ Open Termek
 Open Fuvarlevel
 Open system
 
+Register_Object Termek_sl
+
 Class cTermekDataDictionary is a DataDictionary
     
     Procedure Construct_Object
@@ -22,9 +24,11 @@ Class cTermekDataDictionary is a DataDictionary
         Set Field_Auto_Increment Field Termek.Azonosito to File_Field system.Last_Termek
         Set Field_Label_Long Field Termek.Azonosito to "Term‚k azonos¡t¢ja"
         Set Field_Label_Short Field Termek.Azonosito to "Azonos¡t¢"
+        Set Field_Prompt_Object Field Termek.Azonosito to Termek_sl
 
         Set Field_Label_Long Field Termek.Megnevezes to "Term‚k megnevez‚se"
         Set Field_Label_Short Field Termek.Megnevezes to "Megnevez‚s"
+        Set Field_Prompt_Object Field Termek.Megnevezes to Termek_sl
 
         Set Field_Label_Long Field Termek.Egysegar to "Term‚k egys‚g ra"
         Set Field_Label_Short Field Termek.Egysegar to "Egys‚g r"
@@ -32,3 +36,8 @@ Class cTermekDataDictionary is a DataDictionary
     End_Procedure
 
 End_Class
+
+#IFDEF Is$WebApp
+#ELSE
+Use Termek.sl
+#ENDIF

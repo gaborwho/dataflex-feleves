@@ -103,34 +103,56 @@ Object oMain is a Panel
                     End_Procedure
                 End_Object
 
-                Object oFuvarlevelViewMenuItem is a cCJMenuItem
-                    Set psCaption to "FuvarlevelView"
-                    Set psTooltip to "FuvarlevelView"
+                Object oGepkocsiEntryMenuItem is a cCJMenuItem
+                    Set psCaption to "GepkocsiEntry"
+                    Set psTooltip to "GepkocsiEntry"
                 
                     Procedure OnExecute Variant vCommandBarControl
                         Handle hoClient
                         Get Client_Id to hoClient
-                        Send Activate_oFuvarlevelView of hoClient
+                        Send Activate_oGepkocsiEntry of hoClient
                     End_Procedure
                 End_Object
 
-                Object oFuvarGridEntryMenuItem is a cCJMenuItem
-                    Set psCaption to "FuvarGridEntry"
-                    Set psTooltip to "FuvarGridEntry"
+                Object oTermekEntryMenuItem is a cCJMenuItem
+                    Set psCaption to "TermekEntry"
+                    Set psTooltip to "TermekEntry"
                 
                     Procedure OnExecute Variant vCommandBarControl
                         Handle hoClient
                         Get Client_Id to hoClient
-                        Send Activate_oFuvarGridEntry of hoClient
+                        Send Activate_oTermekEntry of hoClient
+                    End_Procedure
+                End_Object
+
+                Object oFuvarlevelEntryMenuItem is a cCJMenuItem
+                    Set psCaption to "FuvarlevelEntry"
+                    Set psTooltip to "FuvarlevelEntry"
+                
+                    Procedure OnExecute Variant vCommandBarControl
+                        Handle hoClient
+                        Get Client_Id to hoClient
+                        Send Activate_oFuvarlevelEntry of hoClient
                     End_Procedure
                 End_Object
             End_Object
             
             Object oReportMenu is a cCJMenuItem
-                Set peControlType to xtpControlPopup          
+                Set peControlType to xtpControlPopup
                 Set psCaption to "&Report"
                 Set psToolTip to "Report"
                 Set psDescription to "Available Reports"
+
+                Object oHaviMenuItem is a cCJMenuItem
+                    Set psCaption to "Havi"
+                    Set psTooltip to "Havi"
+                
+                    Procedure OnExecute Variant vCommandBarControl
+                        Handle hoClient
+                        Get Client_Id to hoClient
+                        Send Activate_oHavi of hoClient
+                    End_Procedure
+                End_Object
             End_Object
 
             Object oNavigateMenu is a cCJMenuItem
@@ -335,8 +357,10 @@ Object oMain is a Panel
     Object oClientArea is a ClientArea
         Use StdAbout.pkg
         Use SoforEntry.vw
-        Use FuvarlevelView.vw
-        Use FuvarGridEntry.vw
+        Use GepkocsiEntry.vw
+        Use TermekEntry.vw
+        Use FuvarlevelEntry.vw
+        Use Havi.rv
 
         Procedure Activate_About
             Send DoAbout "" "" "" "" ""

@@ -3,6 +3,8 @@ Use DataDict.pkg
 Open Gepkocsi
 Open Fuvarlevel
 
+Register_Object Gepkocsi_sl
+
 Class cGepkocsiDataDictionary is a DataDictionary
     
     Procedure Construct_Object
@@ -20,10 +22,17 @@ Class cGepkocsiDataDictionary is a DataDictionary
         Set Field_Label_Long Field Gepkocsi.Rendszam to "G‚pj rmu rendsz ma"
         Set Field_Label_Short Field Gepkocsi.Rendszam to "Rendsz m"
         Set Status_Help Field Gepkocsi.Rendszam to "Rendsz m AAA-111 form ban"
+        Set Field_Prompt_Object Field Gepkocsi.Rendszam to Gepkocsi_sl
 
         Set Field_Label_Long Field Gepkocsi.Tipus to "J rmu t¡pusa"
         Set Field_Label_Short Field Gepkocsi.Tipus to "T¡pus"
+        Set Field_Prompt_Object Field Gepkocsi.Tipus to Gepkocsi_sl
 
     End_Procedure
 
 End_Class
+
+#IFDEF Is$WebApp
+#ELSE
+Use Gepkocsi.sl
+#ENDIF

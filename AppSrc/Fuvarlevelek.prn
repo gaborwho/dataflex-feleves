@@ -2667,340 +2667,364 @@ Including file: cFuvarlevelDataDictionary.dd    (C:\Visual DataFlex Projects\Sza
 75076>>>>>        Set Field_Label_Short Field Fuvarlevel.Fuvarszam to "Fuvarsz m"
 75077>>>>>        Set Field_Value_Range Field Fuvarlevel.Fuvarszam to 01/01/2013 12/31/2014
 75078>>>>>
-75078>>>>>    End_Procedure
-75079>>>>>
-75079>>>>>End_Class
-75080>>>
-75080>>>ACTIVATE_VIEW Activate_oFuvarlevelView FOR oFuvarlevelView
-75090>>>>
-75090>>>Object oFuvarlevelView is a dbView
-75092>>>    Set Location to 5 5
-75093>>>    Set Size to 158 421
-75094>>>    Set Label To "FuvarlevelView"
-75095>>>    Set Border_Style to Border_Thick
+75078>>>>>        Set Field_Label_Long Field Fuvarlevel.Termek to "Term‚k megnevez‚se"
+75079>>>>>        Set Field_Label_Short Field Fuvarlevel.Termek to "Term‚k"
+75080>>>>>
+75080>>>>>        Set Field_Label_Long Field Fuvarlevel.Gepkocsi to "G‚pkocsi rendsz ma"
+75081>>>>>        Set Field_Label_Short Field Fuvarlevel.Gepkocsi to "Rendsz m"
+75082>>>>>
+75082>>>>>        Set Field_Label_Long Field Fuvarlevel.Sofor to "Sofor azonos¡t¢ja"
+75083>>>>>        Set Field_Label_Short Field Fuvarlevel.Sofor to "Sofor"
+75084>>>>>
+75084>>>>>        Set Field_Label_Long Field Fuvarlevel.Datum to "Fuvar d tuma"
+75085>>>>>        Set Field_Label_Short Field Fuvarlevel.Datum to "D tum"
+75086>>>>>
+75086>>>>>        Set Field_Label_Long Field Fuvarlevel.Tav to "Fuvar sor n megtett t vols g"
+75087>>>>>        Set Field_Label_Short Field Fuvarlevel.Tav to "T v"
+75088>>>>>
+75088>>>>>        Set Field_Label_Long Field Fuvarlevel.Munkaido to "Fuvarral elt”lt”tt ido"
+75089>>>>>        Set Field_Label_Short Field Fuvarlevel.Munkaido to "Munkaido"
+75090>>>>>
+75090>>>>>        Set Field_Label_Long Field Fuvarlevel.UAMennyiseg to "Fuvar sor n elfogyasztott uzemanyagmennyiseg"
+75091>>>>>        Set Field_Label_Short Field Fuvarlevel.UAMennyiseg to "šzemanyagmennyis‚g"
+75092>>>>>
+75092>>>>>        Set Field_Label_Long Field Fuvarlevel.UAEgysegar to "Fuvar sor n elhaszn lt zemanyag aktu lis  ra"
+75093>>>>>        Set Field_Label_Short Field Fuvarlevel.UAEgysegar to "šzemanyag r"
+75094>>>>>
+75094>>>>>    End_Procedure
+75095>>>>>
+75095>>>>>End_Class
 75096>>>
-75096>>>
-75096>>>    Object oTermek_DD is a cTermekDataDictionary
-75098>>>    End_Object 
-75099>>>
-75099>>>    Object oSofor_DD is a cSoforDataDictionary
-75101>>>    End_Object 
-75102>>>
-75102>>>    Object oGepkocsi_DD is a cGepkocsiDataDictionary
-75104>>>    End_Object 
-75105>>>
-75105>>>    Object oFuvarlevel_DD is a cFuvarlevelDataDictionary
-75107>>>        Set DDO_Server To oSofor_DD
-75108>>>        Set DDO_Server To oTermek_DD
-75109>>>        Set DDO_Server To oGepkocsi_DD
-75110>>>    End_Object 
-75111>>>
-75111>>>    Set Main_DD To oFuvarlevel_DD
-75112>>>    Set Server  To oFuvarlevel_DD
-75113>>>
-75113>>>
-75113>>>
-75113>>>    Object oTermekMegnevezes is a dbForm
-75115>>>        Entry_Item Termek.Megnevezes
-75116>>>        Set Size to 13 186
-75117>>>        Set Location to 5 50
-75118>>>        Set peAnchors to anLeftRight
-75119>>>        Set Label to "Megnevezes"
-75120>>>        Set Label_Justification_mode to jMode_Left
-75121>>>        Set Label_Col_Offset to 45
-75122>>>        Set Label_row_Offset to 0
-75123>>>    End_Object 
-75124>>>
-75124>>>    Object oTermekEgysegar is a dbForm
-75126>>>        Entry_Item Termek.Egysegar
-75127>>>        Set Size to 13 54
-75128>>>        Set Location to 20 50
-75129>>>        Set peAnchors to anLeftRight
-75130>>>        Set Label to "Egysegar"
-75131>>>        Set Label_Justification_mode to jMode_Left
-75132>>>        Set Label_Col_Offset to 45
-75133>>>        Set Label_row_Offset to 0
-75134>>>    End_Object 
-75135>>>
-75135>>>    Object oFuvarlevelDatum is a dbForm
-75137>>>        Entry_Item Fuvarlevel.Datum
-75138>>>        Set Size to 13 66
-75139>>>        Set Location to 35 50
-75140>>>        Set peAnchors to anLeftRight
-75141>>>        Set Label to "Datum"
-75142>>>        Set Label_Justification_mode to jMode_Left
-75143>>>        Set Label_Col_Offset to 45
-75144>>>        Set Label_row_Offset to 0
-75145>>>    End_Object 
-75146>>>
-75146>>>    Object oGepkocsiRendszam is a dbForm
-75148>>>        Entry_Item Gepkocsi.Rendszam
-75149>>>        Set Size to 13 42
-75150>>>        Set Location to 50 50
-75151>>>        Set peAnchors to anLeftRight
-75152>>>        Set Label to "Rendszam"
-75153>>>        Set Label_Justification_mode to jMode_Left
-75154>>>        Set Label_Col_Offset to 45
-75155>>>        Set Label_row_Offset to 0
-75156>>>    End_Object 
-75157>>>
-75157>>>    Object oGepkocsiTipus is a dbForm
-75159>>>        Entry_Item Gepkocsi.Tipus
-75160>>>        Set Size to 13 186
-75161>>>        Set Location to 65 50
-75162>>>        Set peAnchors to anLeftRight
-75163>>>        Set Label to "Tipus"
-75164>>>        Set Label_Justification_mode to jMode_Left
-75165>>>        Set Label_Col_Offset to 45
-75166>>>        Set Label_row_Offset to 0
-75167>>>    End_Object 
-75168>>>
-75168>>>    Object oFuvarlevelTav is a dbForm
-75170>>>        Entry_Item Fuvarlevel.Tav
-75171>>>        Set Size to 13 34
-75172>>>        Set Location to 80 50
-75173>>>        Set peAnchors to anLeftRight
-75174>>>        Set Label to "Tav"
-75175>>>        Set Label_Justification_mode to jMode_Left
-75176>>>        Set Label_Col_Offset to 45
-75177>>>        Set Label_row_Offset to 0
-75178>>>    End_Object 
-75179>>>
-75179>>>    Object oFuvarlevelUAMennyiseg is a dbForm
-75181>>>        Entry_Item Fuvarlevel.UAMennyiseg
-75182>>>        Set Size to 13 34
-75183>>>        Set Location to 95 50
-75184>>>        Set peAnchors to anLeftRight
-75185>>>        Set Label to "UAMennyiseg"
-75186>>>        Set Label_Justification_mode to jMode_Left
-75187>>>        Set Label_Col_Offset to 45
-75188>>>        Set Label_row_Offset to 0
-75189>>>    End_Object 
-75190>>>
-75190>>>    Object oFuvarlevelUAEgysegar is a dbForm
-75192>>>        Entry_Item Fuvarlevel.UAEgysegar
-75193>>>        Set Size to 13 34
-75194>>>        Set Location to 110 50
-75195>>>        Set peAnchors to anLeftRight
-75196>>>        Set Label to "UAEgysegar"
-75197>>>        Set Label_Justification_mode to jMode_Left
-75198>>>        Set Label_Col_Offset to 45
-75199>>>        Set Label_row_Offset to 0
-75200>>>    End_Object 
-75201>>>
-75201>>>    Object oSoforNev is a dbForm
-75203>>>        Entry_Item Sofor.Nev
-75204>>>        Set Size to 13 366
-75205>>>        Set Location to 125 50
-75206>>>        Set peAnchors to anLeftRight
-75207>>>        Set Label to "Nev"
-75208>>>        Set Label_Justification_mode to jMode_Left
-75209>>>        Set Label_Col_Offset to 45
-75210>>>        Set Label_row_Offset to 0
-75211>>>    End_Object 
-75212>>>
-75212>>>    Object oFuvarlevelMunkaido is a dbForm
-75214>>>        Entry_Item Fuvarlevel.Munkaido
-75215>>>        Set Size to 13 34
-75216>>>        Set Location to 140 50
-75217>>>        Set peAnchors to anLeftRight
-75218>>>        Set Label to "Munkaido"
-75219>>>        Set Label_Justification_mode to jMode_Left
-75220>>>        Set Label_Col_Offset to 45
-75221>>>        Set Label_row_Offset to 0
-75222>>>    End_Object 
-75223>>>
-75223>>>
-75223>>>End_Object 
-75224>        Use FuvarGridEntry.vw
+75096>>>ACTIVATE_VIEW Activate_oFuvarlevelView FOR oFuvarlevelView
+75106>>>>
+75106>>>Object oFuvarlevelView is a dbView
+75108>>>    Set Location to 5 5
+75109>>>    Set Size to 158 421
+75110>>>    Set Label To "FuvarlevelView"
+75111>>>    Set Border_Style to Border_Thick
+75112>>>
+75112>>>
+75112>>>    Object oTermek_DD is a cTermekDataDictionary
+75114>>>    End_Object 
+75115>>>
+75115>>>    Object oSofor_DD is a cSoforDataDictionary
+75117>>>    End_Object 
+75118>>>
+75118>>>    Object oGepkocsi_DD is a cGepkocsiDataDictionary
+75120>>>    End_Object 
+75121>>>
+75121>>>    Object oFuvarlevel_DD is a cFuvarlevelDataDictionary
+75123>>>        Set DDO_Server To oSofor_DD
+75124>>>        Set DDO_Server To oTermek_DD
+75125>>>        Set DDO_Server To oGepkocsi_DD
+75126>>>    End_Object 
+75127>>>
+75127>>>    Set Main_DD To oFuvarlevel_DD
+75128>>>    Set Server  To oFuvarlevel_DD
+75129>>>
+75129>>>
+75129>>>
+75129>>>    Object oTermekMegnevezes is a dbForm
+75131>>>        Entry_Item Termek.Megnevezes
+75132>>>        Set Size to 13 186
+75133>>>        Set Location to 5 50
+75134>>>        Set peAnchors to anLeftRight
+75135>>>        Set Label to "Megnevezes"
+75136>>>        Set Label_Justification_mode to jMode_Left
+75137>>>        Set Label_Col_Offset to 45
+75138>>>        Set Label_row_Offset to 0
+75139>>>    End_Object 
+75140>>>
+75140>>>    Object oTermekEgysegar is a dbForm
+75142>>>        Entry_Item Termek.Egysegar
+75143>>>        Set Size to 13 54
+75144>>>        Set Location to 20 50
+75145>>>        Set peAnchors to anLeftRight
+75146>>>        Set Label to "Egysegar"
+75147>>>        Set Label_Justification_mode to jMode_Left
+75148>>>        Set Label_Col_Offset to 45
+75149>>>        Set Label_row_Offset to 0
+75150>>>    End_Object 
+75151>>>
+75151>>>    Object oFuvarlevelDatum is a dbForm
+75153>>>        Entry_Item Fuvarlevel.Datum
+75154>>>        Set Size to 13 66
+75155>>>        Set Location to 35 50
+75156>>>        Set peAnchors to anLeftRight
+75157>>>        Set Label to "Datum"
+75158>>>        Set Label_Justification_mode to jMode_Left
+75159>>>        Set Label_Col_Offset to 45
+75160>>>        Set Label_row_Offset to 0
+75161>>>    End_Object 
+75162>>>
+75162>>>    Object oGepkocsiRendszam is a dbForm
+75164>>>        Entry_Item Gepkocsi.Rendszam
+75165>>>        Set Size to 13 42
+75166>>>        Set Location to 50 50
+75167>>>        Set peAnchors to anLeftRight
+75168>>>        Set Label to "Rendszam"
+75169>>>        Set Label_Justification_mode to jMode_Left
+75170>>>        Set Label_Col_Offset to 45
+75171>>>        Set Label_row_Offset to 0
+75172>>>    End_Object 
+75173>>>
+75173>>>    Object oGepkocsiTipus is a dbForm
+75175>>>        Entry_Item Gepkocsi.Tipus
+75176>>>        Set Size to 13 186
+75177>>>        Set Location to 65 50
+75178>>>        Set peAnchors to anLeftRight
+75179>>>        Set Label to "Tipus"
+75180>>>        Set Label_Justification_mode to jMode_Left
+75181>>>        Set Label_Col_Offset to 45
+75182>>>        Set Label_row_Offset to 0
+75183>>>    End_Object 
+75184>>>
+75184>>>    Object oFuvarlevelTav is a dbForm
+75186>>>        Entry_Item Fuvarlevel.Tav
+75187>>>        Set Size to 13 34
+75188>>>        Set Location to 80 50
+75189>>>        Set peAnchors to anLeftRight
+75190>>>        Set Label to "Tav"
+75191>>>        Set Label_Justification_mode to jMode_Left
+75192>>>        Set Label_Col_Offset to 45
+75193>>>        Set Label_row_Offset to 0
+75194>>>    End_Object 
+75195>>>
+75195>>>    Object oFuvarlevelUAMennyiseg is a dbForm
+75197>>>        Entry_Item Fuvarlevel.UAMennyiseg
+75198>>>        Set Size to 13 34
+75199>>>        Set Location to 95 50
+75200>>>        Set peAnchors to anLeftRight
+75201>>>        Set Label to "UAMennyiseg"
+75202>>>        Set Label_Justification_mode to jMode_Left
+75203>>>        Set Label_Col_Offset to 45
+75204>>>        Set Label_row_Offset to 0
+75205>>>    End_Object 
+75206>>>
+75206>>>    Object oFuvarlevelUAEgysegar is a dbForm
+75208>>>        Entry_Item Fuvarlevel.UAEgysegar
+75209>>>        Set Size to 13 34
+75210>>>        Set Location to 110 50
+75211>>>        Set peAnchors to anLeftRight
+75212>>>        Set Label to "UAEgysegar"
+75213>>>        Set Label_Justification_mode to jMode_Left
+75214>>>        Set Label_Col_Offset to 45
+75215>>>        Set Label_row_Offset to 0
+75216>>>    End_Object 
+75217>>>
+75217>>>    Object oSoforNev is a dbForm
+75219>>>        Entry_Item Sofor.Nev
+75220>>>        Set Size to 13 366
+75221>>>        Set Location to 125 50
+75222>>>        Set peAnchors to anLeftRight
+75223>>>        Set Label to "Nev"
+75224>>>        Set Label_Justification_mode to jMode_Left
+75225>>>        Set Label_Col_Offset to 45
+75226>>>        Set Label_row_Offset to 0
+75227>>>    End_Object 
+75228>>>
+75228>>>    Object oFuvarlevelMunkaido is a dbForm
+75230>>>        Entry_Item Fuvarlevel.Munkaido
+75231>>>        Set Size to 13 34
+75232>>>        Set Location to 140 50
+75233>>>        Set peAnchors to anLeftRight
+75234>>>        Set Label to "Munkaido"
+75235>>>        Set Label_Justification_mode to jMode_Left
+75236>>>        Set Label_Col_Offset to 45
+75237>>>        Set Label_row_Offset to 0
+75238>>>    End_Object 
+75239>>>
+75239>>>
+75239>>>End_Object 
+75240>        Use FuvarGridEntry.vw
 Including file: FuvarGridEntry.vw    (C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc\FuvarGridEntry.vw)
-75224>>>// C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc\FuvarGridEntry.vw
-75224>>>// FuvarGridEntry
-75224>>>//
-75224>>>
-75224>>>Use DFClient.pkg
-75224>>>Use DFEntry.pkg
-75224>>>Use cDbCJGrid.pkg
-75224>>>Use cDbCJGridColumn.pkg
-75224>>>
-75224>>>Use cTermekDataDictionary.dd
-75224>>>Use cSoforDataDictionary.dd
-75224>>>Use cGepkocsiDataDictionary.dd
-75224>>>Use cFuvarlevelDataDictionary.dd
-75224>>>
-75224>>>ACTIVATE_VIEW Activate_oFuvarGridEntry FOR oFuvarGridEntry
-75234>>>>
-75234>>>Object oFuvarGridEntry is a dbView
-75236>>>    Set Location to 5 5
-75237>>>    Set Size to 114 409
-75238>>>    Set Label To "FuvarGridEntry"
-75239>>>    Set Border_Style to Border_Thick
+75240>>>// C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc\FuvarGridEntry.vw
+75240>>>// FuvarGridEntry
+75240>>>//
 75240>>>
+75240>>>Use DFClient.pkg
+75240>>>Use DFEntry.pkg
+75240>>>Use cDbCJGrid.pkg
+75240>>>Use cDbCJGridColumn.pkg
 75240>>>
-75240>>>    Object oTermek_DD is a cTermekDataDictionary
-75242>>>    End_Object 
-75243>>>
-75243>>>    Object oSofor_DD is a cSoforDataDictionary
-75245>>>        // this lets you save a new parent DD from within child DD
-75245>>>        Set Allow_Foreign_New_Save_State to True
-75246>>>    End_Object 
-75247>>>
-75247>>>    Object oGepkocsi_DD is a cGepkocsiDataDictionary
-75249>>>    End_Object 
-75250>>>
-75250>>>    Object oFuvarlevel_DD is a cFuvarlevelDataDictionary
-75252>>>        Set DDO_Server To oSofor_DD
-75253>>>        Set DDO_Server To oTermek_DD
-75254>>>        Set DDO_Server To oGepkocsi_DD
-75255>>>        Set Constrain_File To Sofor.File_Number
-75256>>>    End_Object 
-75257>>>
-75257>>>    Set Main_DD To oSofor_DD
-75258>>>    Set Server  To oSofor_DD
+75240>>>Use cTermekDataDictionary.dd
+75240>>>Use cSoforDataDictionary.dd
+75240>>>Use cGepkocsiDataDictionary.dd
+75240>>>Use cFuvarlevelDataDictionary.dd
+75240>>>
+75240>>>ACTIVATE_VIEW Activate_oFuvarGridEntry FOR oFuvarGridEntry
+75250>>>>
+75250>>>Object oFuvarGridEntry is a dbView
+75252>>>    Set Location to 5 5
+75253>>>    Set Size to 114 409
+75254>>>    Set Label To "FuvarGridEntry"
+75255>>>    Set Border_Style to Border_Thick
+75256>>>
+75256>>>
+75256>>>    Object oTermek_DD is a cTermekDataDictionary
+75258>>>    End_Object 
 75259>>>
-75259>>>
-75259>>>
-75259>>>    Object oSoforAzonosito is a dbForm
-75261>>>        Entry_Item Sofor.Azonosito
-75262>>>        Set Size to 13 42
-75263>>>        Set Location to 5 38
-75264>>>        Set peAnchors to anLeftRight
-75265>>>        Set Label to "Azonosito"
-75266>>>        Set Label_Justification_mode to jMode_Left
-75267>>>        Set Label_Col_Offset to 33
-75268>>>        Set Label_row_Offset to 0
-75269>>>    End_Object 
-75270>>>
-75270>>>    Object oSoforNev is a dbForm
-75272>>>        Entry_Item Sofor.Nev
-75273>>>        Set Size to 13 366
-75274>>>        Set Location to 20 38
-75275>>>        Set peAnchors to anLeftRight
-75276>>>        Set Label to "Nev"
-75277>>>        Set Label_Justification_mode to jMode_Left
-75278>>>        Set Label_Col_Offset to 33
-75279>>>        Set Label_row_Offset to 0
-75280>>>    End_Object 
-75281>>>
-75281>>>    Object oDetailGrid is a cDbCJGrid
-75283>>>        Set Size to 66 395
-75284>>>        Set Location to 43 5
-75285>>>        Set Server to oFuvarlevel_DD
-75286>>>        Set Ordering to 4
-75287>>>        Set peAnchors to anAll
-75288>>>        Set psLayoutSection to "oFuvarGridEntry_oDetailGrid"
-75289>>>        Set pbAllowInsertRow to False
-75290>>>        Set pbHeaderPrompts to True
-75291>>>
-75291>>>        Object oFuvarlevel_Fuvarszam is a cDbCJGridColumn
-75293>>>            Entry_Item Fuvarlevel.Fuvarszam
-75294>>>            Set piWidth to 67
-75295>>>            Set psCaption to "Fuvarszam"
-75296>>>        End_Object 
+75259>>>    Object oSofor_DD is a cSoforDataDictionary
+75261>>>        // this lets you save a new parent DD from within child DD
+75261>>>        Set Allow_Foreign_New_Save_State to True
+75262>>>    End_Object 
+75263>>>
+75263>>>    Object oGepkocsi_DD is a cGepkocsiDataDictionary
+75265>>>    End_Object 
+75266>>>
+75266>>>    Object oFuvarlevel_DD is a cFuvarlevelDataDictionary
+75268>>>        Set DDO_Server To oSofor_DD
+75269>>>        Set DDO_Server To oTermek_DD
+75270>>>        Set DDO_Server To oGepkocsi_DD
+75271>>>        Set Constrain_File To Sofor.File_Number
+75272>>>    End_Object 
+75273>>>
+75273>>>    Set Main_DD To oSofor_DD
+75274>>>    Set Server  To oSofor_DD
+75275>>>
+75275>>>
+75275>>>
+75275>>>    Object oSoforAzonosito is a dbForm
+75277>>>        Entry_Item Sofor.Azonosito
+75278>>>        Set Size to 13 42
+75279>>>        Set Location to 5 38
+75280>>>        Set peAnchors to anLeftRight
+75281>>>        Set Label to "Azonosito"
+75282>>>        Set Label_Justification_mode to jMode_Left
+75283>>>        Set Label_Col_Offset to 33
+75284>>>        Set Label_row_Offset to 0
+75285>>>    End_Object 
+75286>>>
+75286>>>    Object oSoforNev is a dbForm
+75288>>>        Entry_Item Sofor.Nev
+75289>>>        Set Size to 13 366
+75290>>>        Set Location to 20 38
+75291>>>        Set peAnchors to anLeftRight
+75292>>>        Set Label to "Nev"
+75293>>>        Set Label_Justification_mode to jMode_Left
+75294>>>        Set Label_Col_Offset to 33
+75295>>>        Set Label_row_Offset to 0
+75296>>>    End_Object 
 75297>>>
-75297>>>        Object oTermek_Azonosito is a cDbCJGridColumn
-75299>>>            Entry_Item Termek.Azonosito
-75300>>>            Set piWidth to 54
-75301>>>            Set psCaption to "Termek"
-75302>>>        End_Object 
-75303>>>
-75303>>>        Object oGepkocsi_Rendszam is a cDbCJGridColumn
-75305>>>            Entry_Item Gepkocsi.Rendszam
-75306>>>            Set piWidth to 57
-75307>>>            Set psCaption to "Gepkocsi"
-75308>>>        End_Object 
-75309>>>
-75309>>>        Object oSofor_Azonosito is a cDbCJGridColumn
-75311>>>            Entry_Item Sofor.Azonosito
-75312>>>            Set piWidth to 54
-75313>>>            Set psCaption to "Sofor"
-75314>>>        End_Object 
-75315>>>
-75315>>>        Object oFuvarlevel_Datum is a cDbCJGridColumn
-75317>>>            Entry_Item Fuvarlevel.Datum
-75318>>>            Set piWidth to 90
-75319>>>            Set psCaption to "Datum"
-75320>>>        End_Object 
-75321>>>
-75321>>>        Object oFuvarlevel_Tav is a cDbCJGridColumn
-75323>>>            Entry_Item Fuvarlevel.Tav
-75324>>>            Set piWidth to 42
-75325>>>            Set psCaption to "Tav"
-75326>>>        End_Object 
-75327>>>
-75327>>>        Object oFuvarlevel_Munkaido is a cDbCJGridColumn
-75329>>>            Entry_Item Fuvarlevel.Munkaido
-75330>>>            Set piWidth to 60
-75331>>>            Set psCaption to "Munkaido"
-75332>>>        End_Object 
-75333>>>
-75333>>>        Object oFuvarlevel_UAMennyiseg is a cDbCJGridColumn
-75335>>>            Entry_Item Fuvarlevel.UAMennyiseg
-75336>>>            Set piWidth to 79
-75337>>>            Set psCaption to "UAMennyiseg"
-75338>>>        End_Object 
-75339>>>
-75339>>>        Object oFuvarlevel_UAEgysegar is a cDbCJGridColumn
-75341>>>            Entry_Item Fuvarlevel.UAEgysegar
-75342>>>            Set piWidth to 73
-75343>>>            Set psCaption to "UAEgysegar"
-75344>>>        End_Object 
-75345>>>
-75345>>>    End_Object 
-75346>>>
-75346>>>    //-----------------------------------------------------------------------
-75346>>>    // Create custom confirmation messages for save and delete
-75346>>>    // We must create the new functions and assign verify messages
-75346>>>    // to them.
-75346>>>    //-----------------------------------------------------------------------
-75346>>>
-75346>>>    Function ConfirmDeleteHeader Returns Boolean
-75349>>>        Boolean bFail
-75349>>>        Get Confirm "Delete Entire Header and all detail?" to bFail
-75350>>>        Function_Return bFail
-75351>>>    End_Function 
-75352>>>
-75352>>>    // Only confirm on the saving of new records
-75352>>>    Function ConfirmSaveHeader Returns Boolean
-75355>>>        Boolean bNoSave bHasRecord
-75355>>>        Handle  hoSrvr
-75355>>>        Get Server to hoSrvr
-75356>>>        Get HasRecord of hoSrvr to bHasRecord
-75357>>>        If not bHasRecord Begin
-75359>>>            Get Confirm "Save this NEW header?" to bNoSave
-75360>>>        End
-75360>>>>
-75360>>>        Function_Return bNoSave
-75361>>>    End_Function 
+75297>>>    Object oDetailGrid is a cDbCJGrid
+75299>>>        Set Size to 66 395
+75300>>>        Set Location to 43 5
+75301>>>        Set Server to oFuvarlevel_DD
+75302>>>        Set Ordering to 4
+75303>>>        Set peAnchors to anAll
+75304>>>        Set psLayoutSection to "oFuvarGridEntry_oDetailGrid"
+75305>>>        Set pbAllowInsertRow to False
+75306>>>        Set pbHeaderPrompts to True
+75307>>>
+75307>>>        Object oFuvarlevel_Fuvarszam is a cDbCJGridColumn
+75309>>>            Entry_Item Fuvarlevel.Fuvarszam
+75310>>>            Set piWidth to 67
+75311>>>            Set psCaption to "Fuvarszam"
+75312>>>        End_Object 
+75313>>>
+75313>>>        Object oTermek_Azonosito is a cDbCJGridColumn
+75315>>>            Entry_Item Termek.Azonosito
+75316>>>            Set piWidth to 54
+75317>>>            Set psCaption to "Termek"
+75318>>>        End_Object 
+75319>>>
+75319>>>        Object oGepkocsi_Rendszam is a cDbCJGridColumn
+75321>>>            Entry_Item Gepkocsi.Rendszam
+75322>>>            Set piWidth to 57
+75323>>>            Set psCaption to "Gepkocsi"
+75324>>>        End_Object 
+75325>>>
+75325>>>        Object oSofor_Azonosito is a cDbCJGridColumn
+75327>>>            Entry_Item Sofor.Azonosito
+75328>>>            Set piWidth to 54
+75329>>>            Set psCaption to "Sofor"
+75330>>>        End_Object 
+75331>>>
+75331>>>        Object oFuvarlevel_Datum is a cDbCJGridColumn
+75333>>>            Entry_Item Fuvarlevel.Datum
+75334>>>            Set piWidth to 90
+75335>>>            Set psCaption to "Datum"
+75336>>>        End_Object 
+75337>>>
+75337>>>        Object oFuvarlevel_Tav is a cDbCJGridColumn
+75339>>>            Entry_Item Fuvarlevel.Tav
+75340>>>            Set piWidth to 42
+75341>>>            Set psCaption to "Tav"
+75342>>>        End_Object 
+75343>>>
+75343>>>        Object oFuvarlevel_Munkaido is a cDbCJGridColumn
+75345>>>            Entry_Item Fuvarlevel.Munkaido
+75346>>>            Set piWidth to 60
+75347>>>            Set psCaption to "Munkaido"
+75348>>>        End_Object 
+75349>>>
+75349>>>        Object oFuvarlevel_UAMennyiseg is a cDbCJGridColumn
+75351>>>            Entry_Item Fuvarlevel.UAMennyiseg
+75352>>>            Set piWidth to 79
+75353>>>            Set psCaption to "UAMennyiseg"
+75354>>>        End_Object 
+75355>>>
+75355>>>        Object oFuvarlevel_UAEgysegar is a cDbCJGridColumn
+75357>>>            Entry_Item Fuvarlevel.UAEgysegar
+75358>>>            Set piWidth to 73
+75359>>>            Set psCaption to "UAEgysegar"
+75360>>>        End_Object 
+75361>>>
+75361>>>    End_Object 
 75362>>>
-75362>>>    // Define alternate confirmation Messages
-75362>>>    Set Verify_Save_MSG       to (RefFunc(ConfirmSaveHeader))
-75363>>>    Set Verify_Delete_MSG     to (RefFunc(ConfirmDeleteHeader))
-75364>>>    // Saves in header should not clear the view
-75364>>>    Set Auto_Clear_Deo_State to False
-75365>>>
-75365>>>
-75365>>>End_Object 
-75366>
-75366>        Procedure Activate_About
-75369>            Send DoAbout "" "" "" "" ""
-75370>        End_Procedure
-75371>
-75371>    End_Object
-75372>
-75372>End_Object
-75373>
-75373>Start_UI
-75374>
+75362>>>    //-----------------------------------------------------------------------
+75362>>>    // Create custom confirmation messages for save and delete
+75362>>>    // We must create the new functions and assign verify messages
+75362>>>    // to them.
+75362>>>    //-----------------------------------------------------------------------
+75362>>>
+75362>>>    Function ConfirmDeleteHeader Returns Boolean
+75365>>>        Boolean bFail
+75365>>>        Get Confirm "Delete Entire Header and all detail?" to bFail
+75366>>>        Function_Return bFail
+75367>>>    End_Function 
+75368>>>
+75368>>>    // Only confirm on the saving of new records
+75368>>>    Function ConfirmSaveHeader Returns Boolean
+75371>>>        Boolean bNoSave bHasRecord
+75371>>>        Handle  hoSrvr
+75371>>>        Get Server to hoSrvr
+75372>>>        Get HasRecord of hoSrvr to bHasRecord
+75373>>>        If not bHasRecord Begin
+75375>>>            Get Confirm "Save this NEW header?" to bNoSave
+75376>>>        End
+75376>>>>
+75376>>>        Function_Return bNoSave
+75377>>>    End_Function 
+75378>>>
+75378>>>    // Define alternate confirmation Messages
+75378>>>    Set Verify_Save_MSG       to (RefFunc(ConfirmSaveHeader))
+75379>>>    Set Verify_Delete_MSG     to (RefFunc(ConfirmDeleteHeader))
+75380>>>    // Saves in header should not clear the view
+75380>>>    Set Auto_Clear_Deo_State to False
+75381>>>
+75381>>>
+75381>>>End_Object 
+75382>
+75382>        Procedure Activate_About
+75385>            Send DoAbout "" "" "" "" ""
+75386>        End_Procedure
+75387>
+75387>    End_Object
+75388>
+75388>End_Object
+75389>
+75389>Start_UI
+75390>
 Summary
 Memory Available: 2147483647
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 43002
 Total Resources: 0
-Total Commands : 75373
+Total Commands : 75389
 Total Windows  : 1
 Total Pages    : 1
-Static Data    : 451991
-Message area   : 522730
-Total Blocks   : 27012
+Static Data    : 452431
+Message area   : 523034
+Total Blocks   : 27020

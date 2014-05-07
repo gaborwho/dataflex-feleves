@@ -19,6 +19,34 @@ Class cFuvarlevelDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
 
+        Set Field_Label_Long Field Fuvarlevel.Fuvarszam to "FuvarlevÇl sz†ma"
+        Set Field_Label_Short Field Fuvarlevel.Fuvarszam to "Fuvarsz†m"
+        Set Field_Value_Range Field Fuvarlevel.Fuvarszam to 01/01/2013 12/31/2014
+
+        Set Field_Label_Long Field Fuvarlevel.Termek to "TermÇk megnevezÇse"
+        Set Field_Label_Short Field Fuvarlevel.Termek to "TermÇk"
+
+        Set Field_Label_Long Field Fuvarlevel.Gepkocsi to "GÇpkocsi rendsz†ma"
+        Set Field_Label_Short Field Fuvarlevel.Gepkocsi to "Rendsz†m"
+
+        Set Field_Label_Long Field Fuvarlevel.Sofor to "Sofor azonos°t¢ja"
+        Set Field_Label_Short Field Fuvarlevel.Sofor to "Sofor"
+
+        Set Field_Label_Long Field Fuvarlevel.Datum to "Fuvar d†tuma"
+        Set Field_Label_Short Field Fuvarlevel.Datum to "D†tum"
+
+        Set Field_Label_Long Field Fuvarlevel.Tav to "Fuvar sor†n megtett t†vols†g"
+        Set Field_Label_Short Field Fuvarlevel.Tav to "T†v"
+
+        Set Field_Label_Long Field Fuvarlevel.Munkaido to "Fuvarral eltîltîtt ido"
+        Set Field_Label_Short Field Fuvarlevel.Munkaido to "Munkaido"
+
+        Set Field_Label_Long Field Fuvarlevel.UAMennyiseg to "Fuvar sor†n elfogyasztott uzemanyagmennyiseg"
+        Set Field_Label_Short Field Fuvarlevel.UAMennyiseg to "özemanyagmennyisÇg"
+
+        Set Field_Label_Long Field Fuvarlevel.UAEgysegar to "Fuvar sor†n elhaszn†lt Åzemanyag aktu†lis †ra"
+        Set Field_Label_Short Field Fuvarlevel.UAEgysegar to "özemanyag†r"
+
     End_Procedure
 
 End_Class

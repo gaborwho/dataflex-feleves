@@ -1,0 +1,3 @@
+#REPLACE FILE5 system
+#REPLACE system.Recnum |FN5,0
+#REPLACE system.Last_Fuvarszam |FN5,1

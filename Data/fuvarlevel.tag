@@ -1,3 +1,4 @@
+Fuvarszam
 Termek
 Gepkocsi
 Sofor

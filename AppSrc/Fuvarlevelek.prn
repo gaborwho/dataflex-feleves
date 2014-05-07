@@ -1,5 +1,5 @@
 Compiling Program: C:\Visual DataFlex Projects\Szallitmanyozas\AppSrc\Fuvarlevelek.src
-Memory Available: 2147483647
+Memory Available: 99524608
 1>Use DFAllEnt.pkg
 Using pre-compiled package DFALLENT.PKG
 Including file: dfallent.pkd    (C:\Program Files (x86)\Visual DataFlex 17.1\Pkg\dfallent.pkd)
@@ -2652,7 +2652,7 @@ Including file: cFuvarlevelDataDictionary.dd    (C:\Visual DataFlex Projects\Sza
 75070>>>>
 75070>>>Object oFuvarlevelView is a dbView
 75072>>>    Set Location to 5 5
-75073>>>    Set Size to 233 421
+75073>>>    Set Size to 158 421
 75074>>>    Set Label To "FuvarlevelView"
 75075>>>    Set Border_Style to Border_Thick
 75076>>>
@@ -2677,67 +2677,67 @@ Including file: cFuvarlevelDataDictionary.dd    (C:\Visual DataFlex Projects\Sza
 75093>>>
 75093>>>
 75093>>>
-75093>>>    Object oTermekAzonosito is a dbForm
-75095>>>        Entry_Item Termek.Azonosito
-75096>>>        Set Size to 13 42
+75093>>>    Object oTermekMegnevezes is a dbForm
+75095>>>        Entry_Item Termek.Megnevezes
+75096>>>        Set Size to 13 186
 75097>>>        Set Location to 5 50
 75098>>>        Set peAnchors to anLeftRight
-75099>>>        Set Label to "Termek"
+75099>>>        Set Label to "Megnevezes"
 75100>>>        Set Label_Justification_mode to jMode_Left
 75101>>>        Set Label_Col_Offset to 45
 75102>>>        Set Label_row_Offset to 0
 75103>>>    End_Object 
 75104>>>
-75104>>>    Object oGepkocsiRendszam is a dbForm
-75106>>>        Entry_Item Gepkocsi.Rendszam
-75107>>>        Set Size to 13 42
+75104>>>    Object oTermekEgysegar is a dbForm
+75106>>>        Entry_Item Termek.Egysegar
+75107>>>        Set Size to 13 54
 75108>>>        Set Location to 20 50
 75109>>>        Set peAnchors to anLeftRight
-75110>>>        Set Label to "Gepkocsi"
+75110>>>        Set Label to "Egysegar"
 75111>>>        Set Label_Justification_mode to jMode_Left
 75112>>>        Set Label_Col_Offset to 45
 75113>>>        Set Label_row_Offset to 0
 75114>>>    End_Object 
 75115>>>
-75115>>>    Object oSoforAzonosito is a dbForm
-75117>>>        Entry_Item Sofor.Azonosito
-75118>>>        Set Size to 13 42
+75115>>>    Object oFuvarlevelDatum is a dbForm
+75117>>>        Entry_Item Fuvarlevel.Datum
+75118>>>        Set Size to 13 66
 75119>>>        Set Location to 35 50
 75120>>>        Set peAnchors to anLeftRight
-75121>>>        Set Label to "Sofor"
+75121>>>        Set Label to "Datum"
 75122>>>        Set Label_Justification_mode to jMode_Left
 75123>>>        Set Label_Col_Offset to 45
 75124>>>        Set Label_row_Offset to 0
 75125>>>    End_Object 
 75126>>>
-75126>>>    Object oFuvarlevelDatum is a dbForm
-75128>>>        Entry_Item Fuvarlevel.Datum
-75129>>>        Set Size to 13 66
+75126>>>    Object oGepkocsiRendszam is a dbForm
+75128>>>        Entry_Item Gepkocsi.Rendszam
+75129>>>        Set Size to 13 42
 75130>>>        Set Location to 50 50
 75131>>>        Set peAnchors to anLeftRight
-75132>>>        Set Label to "Datum"
+75132>>>        Set Label to "Rendszam"
 75133>>>        Set Label_Justification_mode to jMode_Left
 75134>>>        Set Label_Col_Offset to 45
 75135>>>        Set Label_row_Offset to 0
 75136>>>    End_Object 
 75137>>>
-75137>>>    Object oFuvarlevelTav is a dbForm
-75139>>>        Entry_Item Fuvarlevel.Tav
-75140>>>        Set Size to 13 34
+75137>>>    Object oGepkocsiTipus is a dbForm
+75139>>>        Entry_Item Gepkocsi.Tipus
+75140>>>        Set Size to 13 186
 75141>>>        Set Location to 65 50
 75142>>>        Set peAnchors to anLeftRight
-75143>>>        Set Label to "Tav"
+75143>>>        Set Label to "Tipus"
 75144>>>        Set Label_Justification_mode to jMode_Left
 75145>>>        Set Label_Col_Offset to 45
 75146>>>        Set Label_row_Offset to 0
 75147>>>    End_Object 
 75148>>>
-75148>>>    Object oFuvarlevelMunkaido is a dbForm
-75150>>>        Entry_Item Fuvarlevel.Munkaido
+75148>>>    Object oFuvarlevelTav is a dbForm
+75150>>>        Entry_Item Fuvarlevel.Tav
 75151>>>        Set Size to 13 34
 75152>>>        Set Location to 80 50
 75153>>>        Set peAnchors to anLeftRight
-75154>>>        Set Label to "Munkaido"
+75154>>>        Set Label to "Tav"
 75155>>>        Set Label_Justification_mode to jMode_Left
 75156>>>        Set Label_Col_Offset to 45
 75157>>>        Set Label_row_Offset to 0
@@ -2765,105 +2765,50 @@ Including file: cFuvarlevelDataDictionary.dd    (C:\Visual DataFlex Projects\Sza
 75179>>>        Set Label_row_Offset to 0
 75180>>>    End_Object 
 75181>>>
-75181>>>    Object oTermekAzonosito is a dbForm
-75183>>>        Entry_Item Termek.Azonosito
-75184>>>        Set Size to 13 42
+75181>>>    Object oSoforNev is a dbForm
+75183>>>        Entry_Item Sofor.Nev
+75184>>>        Set Size to 13 366
 75185>>>        Set Location to 125 50
 75186>>>        Set peAnchors to anLeftRight
-75187>>>        Set Label to "Azonosito"
+75187>>>        Set Label to "Nev"
 75188>>>        Set Label_Justification_mode to jMode_Left
 75189>>>        Set Label_Col_Offset to 45
 75190>>>        Set Label_row_Offset to 0
 75191>>>    End_Object 
 75192>>>
-75192>>>    Object oTermekMegnevezes is a dbForm
-75194>>>        Entry_Item Termek.Megnevezes
-75195>>>        Set Size to 13 186
+75192>>>    Object oFuvarlevelMunkaido is a dbForm
+75194>>>        Entry_Item Fuvarlevel.Munkaido
+75195>>>        Set Size to 13 34
 75196>>>        Set Location to 140 50
 75197>>>        Set peAnchors to anLeftRight
-75198>>>        Set Label to "Megnevezes"
+75198>>>        Set Label to "Munkaido"
 75199>>>        Set Label_Justification_mode to jMode_Left
 75200>>>        Set Label_Col_Offset to 45
 75201>>>        Set Label_row_Offset to 0
 75202>>>    End_Object 
 75203>>>
-75203>>>    Object oTermekEgysegar is a dbForm
-75205>>>        Entry_Item Termek.Egysegar
-75206>>>        Set Size to 13 54
-75207>>>        Set Location to 155 50
-75208>>>        Set peAnchors to anLeftRight
-75209>>>        Set Label to "Egysegar"
-75210>>>        Set Label_Justification_mode to jMode_Left
-75211>>>        Set Label_Col_Offset to 45
-75212>>>        Set Label_row_Offset to 0
-75213>>>    End_Object 
-75214>>>
-75214>>>    Object oSoforAzonosito is a dbForm
-75216>>>        Entry_Item Sofor.Azonosito
-75217>>>        Set Size to 13 42
-75218>>>        Set Location to 170 50
-75219>>>        Set peAnchors to anLeftRight
-75220>>>        Set Label to "Azonosito"
-75221>>>        Set Label_Justification_mode to jMode_Left
-75222>>>        Set Label_Col_Offset to 45
-75223>>>        Set Label_row_Offset to 0
-75224>>>    End_Object 
-75225>>>
-75225>>>    Object oSoforNev is a dbForm
-75227>>>        Entry_Item Sofor.Nev
-75228>>>        Set Size to 13 366
-75229>>>        Set Location to 185 50
-75230>>>        Set peAnchors to anLeftRight
-75231>>>        Set Label to "Nev"
-75232>>>        Set Label_Justification_mode to jMode_Left
-75233>>>        Set Label_Col_Offset to 45
-75234>>>        Set Label_row_Offset to 0
-75235>>>    End_Object 
-75236>>>
-75236>>>    Object oGepkocsiRendszam is a dbForm
-75238>>>        Entry_Item Gepkocsi.Rendszam
-75239>>>        Set Size to 13 42
-75240>>>        Set Location to 200 50
-75241>>>        Set peAnchors to anLeftRight
-75242>>>        Set Label to "Rendszam"
-75243>>>        Set Label_Justification_mode to jMode_Left
-75244>>>        Set Label_Col_Offset to 45
-75245>>>        Set Label_row_Offset to 0
-75246>>>    End_Object 
-75247>>>
-75247>>>    Object oGepkocsiTipus is a dbForm
-75249>>>        Entry_Item Gepkocsi.Tipus
-75250>>>        Set Size to 13 186
-75251>>>        Set Location to 215 50
-75252>>>        Set peAnchors to anLeftRight
-75253>>>        Set Label to "Tipus"
-75254>>>        Set Label_Justification_mode to jMode_Left
-75255>>>        Set Label_Col_Offset to 45
-75256>>>        Set Label_row_Offset to 0
-75257>>>    End_Object 
-75258>>>
-75258>>>
-75258>>>End_Object 
-75259>
-75259>        Procedure Activate_About
-75262>            Send DoAbout "" "" "" "" ""
-75263>        End_Procedure
-75264>
-75264>    End_Object
-75265>
-75265>End_Object
-75266>
-75266>Start_UI
-75267>
+75203>>>
+75203>>>End_Object 
+75204>
+75204>        Procedure Activate_About
+75207>            Send DoAbout "" "" "" "" ""
+75208>        End_Procedure
+75209>
+75209>    End_Object
+75210>
+75210>End_Object
+75211>
+75211>Start_UI
+75212>
 Summary
-Memory Available: 2147483647
+Memory Available: 79364096
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 42973
 Total Resources: 0
-Total Commands : 75266
+Total Commands : 75211
 Total Windows  : 1
 Total Pages    : 1
-Static Data    : 450915
-Message area   : 521450
-Total Blocks   : 26972
+Static Data    : 450682
+Message area   : 520620
+Total Blocks   : 26956

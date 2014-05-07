@@ -16,6 +16,14 @@ Class cGepkocsiDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
 
+        Set Field_Mask Field Gepkocsi.Rendszam to "@@@-###"
+        Set Field_Label_Long Field Gepkocsi.Rendszam to "G‚pj rmu rendsz ma"
+        Set Field_Label_Short Field Gepkocsi.Rendszam to "Rendsz m"
+        Set Status_Help Field Gepkocsi.Rendszam to "Rendsz m AAA-111 form ban"
+
+        Set Field_Label_Long Field Gepkocsi.Tipus to "J rmu t¡pusa"
+        Set Field_Label_Short Field Gepkocsi.Tipus to "T¡pus"
+
     End_Procedure
 
 End_Class
